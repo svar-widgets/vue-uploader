@@ -19,6 +19,7 @@ To use the widget, simply import the package and include the component in your V
 <script setup>
 import { ref } from "vue";
 import { Uploader, UploaderList } from "@svar-ui/vue-uploader";
+import "@svar-ui/vue-uploader/all.css";
 
 const data = ref([]);
 const uploadURL = "http://localhost:3000/data";

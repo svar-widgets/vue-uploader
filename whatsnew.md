@@ -1,3 +1,7 @@
+## 2.5.1
+
+-   Using Vue Core 2.5.1
+
 ## 2.5.0
 
 ### Initial features
