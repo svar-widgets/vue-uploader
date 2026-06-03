@@ -1,3 +1,7 @@
+## 2.6.0
+
+-   Using Vue Core 2.6.0
+
 ## 2.5.1
 
 -   Using Vue Core 2.5.1

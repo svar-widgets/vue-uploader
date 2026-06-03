@@ -1,6 +1,6 @@
 {
   "name": "@svar-ui/vue-uploader",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "description": "SVAR Vue Uploader library - file upload component with drag and drop support",
   "productTag": "uploader",
   "type": "module",
@@ -35,13 +35,13 @@
     "dist-full/index.css"
   ],
   "dependencies": {
-    "@svar-ui/core-locales": "2.5.3",
+    "@svar-ui/core-locales": "2.6.0",
     "@svar-ui/lib-data-provider": "1.7.1",
-    "@svar-ui/lib-dom": "0.12.2",
+    "@svar-ui/lib-dom": "0.13.1",
     "@svar-ui/lib-vue": "1.1.0",
-    "@svar-ui/lib-state": "1.9.6",
+    "@svar-ui/lib-state": "1.9.7",
     "@svar-ui/uploader-locales": "2.5.0",
-    "@svar-ui/vue-core": "2.5.1"
+    "@svar-ui/vue-core": "2.6.0"
   },
   "peerDependencies": {
     "vue": "^3.0.0"
