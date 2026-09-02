@@ -3,7 +3,7 @@ import Demos from './common/Index.vue'
 
 import { Globals, Button, Segmented, Locale } from '@svar-ui/vue-core';
 import { Willow, WillowDark} from "../src/index.js";
-import "@wx/vue-core/style.css";
+import "@svar/vue-core/style.css";
 
 import { router } from "./common/helpers.js";
 
