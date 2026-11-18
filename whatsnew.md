@@ -1,3 +1,9 @@
+## 2.6.2
+
+### Fixes
+
+- A drop area with `dragEnter` and no `dragLeave` throws an error on drag leave and on drop
+
 ## 2.6.1
 
 -   Using Vue Core 2.6.1

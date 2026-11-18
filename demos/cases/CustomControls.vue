@@ -16,7 +16,7 @@ const uploadURL = "http://localhost:3000/data";
 		<div class="demo">
 			<Uploader v-model:data="data" :upload-u-r-l="uploadURL">
 				<template #default="{ open }">
-					<Button type="primary" :onclick="open">Upload files</Button>
+					<Button type="primary" :onclick="() => open()">Upload files</Button>
 				</template>
 			</Uploader>
 			<UploaderList v-model:data="data" />

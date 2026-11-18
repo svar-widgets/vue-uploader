@@ -22,7 +22,7 @@ const props = defineProps({
 });
 
 const input = ref(null);
-const drag = ref(undefined);
+const drag = ref(false);
 let count = 0;
 let lastCtx = {};
 
@@ -43,7 +43,7 @@ const droparea = (node, ctx) => {
 		dragenter();
 	});
 	node.addEventListener("dragleave", () => {
-		if (ctx.dragEnter) ctx.dragLeave();
+		if (ctx.dragLeave) ctx.dragLeave();
 		dragleave();
 	});
 
@@ -54,7 +54,7 @@ const droparea = (node, ctx) => {
 			ev.preventDefault();
 			lastCtx = ctx;
 			drop(ev);
-			if (ctx.dragEnter) ctx.dragLeave();
+			if (ctx.dragLeave) ctx.dragLeave();
 		},
 		true
 	);
@@ -67,12 +67,12 @@ onMounted(() => {
 });
 
 function add(ev) {
-	const files = Array.from(ev.target.files);
+	const files = Array.from(ev.target.files ?? []);
 	files.forEach(f => addFile(f));
 }
 
 function drop(ev) {
-	const items = Array.from(ev.dataTransfer.items);
+	const items = Array.from(ev.dataTransfer?.items ?? []);
 
 	items.forEach(item => {
 		const entry = item.webkitGetAsEntry();
